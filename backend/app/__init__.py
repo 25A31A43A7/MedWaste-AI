@@ -1,0 +1,1 @@
+# MedWaste AI App Package
