@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 
@@ -32,8 +32,7 @@ export default function App() {
   };
 
   return (
-    <BrowserRouter>
-      <Routes>
+   <Routes>
         {/* Unauthenticated route */}
         <Route 
           path="/login" 
@@ -61,7 +60,6 @@ export default function App() {
           path="*" 
           element={<Navigate to={user ? "/dashboard" : "/login"} replace />} 
         />
-      </Routes>
-    </BrowserRouter>
+        </Routes>
   );
 }
