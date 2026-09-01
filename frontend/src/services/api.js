@@ -1,4 +1,4 @@
-const API_BASE = 'https://medwaste-ai.onrender.com';
+const API_BASE = 'https://medwaste-ai.onrender.com/api';
 
 // Health API
 export async function checkBackendHealth() {
